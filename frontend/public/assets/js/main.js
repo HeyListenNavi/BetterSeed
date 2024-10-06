@@ -1,14 +1,14 @@
 const images = [
-    '/assets/img/maps/1.jpeg',
-    '/assets/img/maps/2.jpeg',
-    '/assets/img/maps/3.jpeg',
-    '/assets/img/maps/4.jpeg',
-    '/assets/img/maps/5.jpeg',
-    '/assets/img/maps/6.jpeg',
-    '/assets/img/maps/7.jpeg',
-    '/assets/img/maps/8.jpeg',
-    '/assets/img/maps/9.jpeg',
-    '/assets/img/maps/10.jpeg',
+    'assets/img/maps/1.jpeg',
+    'assets/img/maps/2.jpeg',
+    'assets/img/maps/3.jpeg',
+    'assets/img/maps/4.jpeg',
+    'assets/img/maps/5.jpeg',
+    'assets/img/maps/6.jpeg',
+    'assets/img/maps/7.jpeg',
+    'assets/img/maps/8.jpeg',
+    'assets/img/maps/9.jpeg',
+    'assets/img/maps/10.jpeg',
 ];  
 
 const icons = [
