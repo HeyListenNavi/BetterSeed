@@ -20114,6 +20114,9 @@ body {
 }
 
 @media (min-width: 768px) {
+  .home .card {
+    max-width: 600px;
+  }
   .home, .maps {
     display: grid;
     grid-template-columns: 15% 1fr;

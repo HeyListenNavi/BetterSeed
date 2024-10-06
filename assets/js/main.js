@@ -11,13 +11,33 @@ const images = [
     '/assets/img/maps/10.jpeg',
 ];  
 
+const icons = [
+    '📈',
+    '📉',
+]
+
 console.log(images)
   
 document.addEventListener("DOMContentLoaded", () => {
     
     document.getElementById("generateSoilAnalysis").onclick = () => {
-          const randomIndex = Math.floor(Math.random() * images.length);
+          let randomIndex = Math.floor(Math.random() * images.length);
           const randomImage = images[randomIndex];
           document.getElementById("map").src = randomImage;
+
+        randomIndex = Math.floor(Math.random() * icons.length);
+        document.getElementById("precipitation").innerText = `${icons[randomIndex]} Precipitation`
+
+        randomIndex = Math.floor(Math.random() * icons.length);
+        document.getElementById("vegetation").innerText = `${icons[randomIndex]} Vegetation`
+        
+        randomIndex = Math.floor(Math.random() * icons.length);
+        document.getElementById("temperature").innerText = `${icons[randomIndex]} Temperature`
+
+        randomIndex = Math.floor(Math.random() * icons.length);
+        document.getElementById("ground-humidity").innerText = `${icons[randomIndex]} Ground humidity`
+
+        randomIndex = Math.floor(Math.random() * icons.length);
+        document.getElementById("air-humidity").innerText = `${icons[randomIndex]} Hair humidity`
     };
 });

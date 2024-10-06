@@ -53,6 +53,10 @@ body {
 
 // Maps styles 🗺
 @include media-breakpoint-up(md) {
+    .home .card {
+        max-width: 600px;
+    }
+
     .home, .maps {
         display: grid;
         grid-template-columns: 15% 1fr;
