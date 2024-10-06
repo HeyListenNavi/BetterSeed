@@ -1,0 +1,52 @@
+// Import fonts ⌨️
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap");
+
+// Color palette 🎨
+$seasalt-white: #F9F9F9;
+$white: #FFFFFF;
+$antiflash-white: #EBEBEB;
+$earie-black: #1D1D1D;
+
+$avocado-green: #4A7C1B;
+$asparagus-green: #799E29;
+
+$jonquil-yellow: #EECB2E;
+$fire-red: #AE2323;
+
+$primary: $avocado-green;
+$secondary: $antiflash-white;
+$success: $seasalt-white;
+$info: $asparagus-green;
+$warning: $jonquil-yellow;
+$danger: $fire-red;
+$light: $white;
+$dark: $earie-black;
+
+// Styles
+$border-radius: 1rem;
+
+$btn-border-width: 0;
+
+$enable-shadows: true;
+
+$font-family-sans-serif: "Inter", system-ui;
+
+// Import bootstrap (●'◡'●)
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Import bootstrap icons (✿◡‿◡)
+$bootstrap-icons-font-src: url("/fonts/bootstrap-icons.woff2") format("woff2"),
+                           url("/fonts/bootstrap-icons.woff?") format("woff");
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons";
+
+// General styles 🪐
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
