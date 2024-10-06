@@ -20149,6 +20149,9 @@ body {
   .maps .main .map {
     grid-area: map;
   }
+  .maps .main .map .map-image {
+    max-height: 400px;
+  }
 }
 @media (max-width: 767.98px) {
   .home .main, .maps .main {
