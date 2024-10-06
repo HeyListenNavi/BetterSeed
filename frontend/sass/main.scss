@@ -53,36 +53,13 @@ body {
 
 // Maps styles 🗺
 @include media-breakpoint-up(md) {
-    .home .card {
-        max-width: 600px;
-    }
-
+    
     .home, .maps {
         display: grid;
-        grid-template-columns: 15% 1fr;
+        grid-template-columns: 20% 1fr;
         grid-template-areas: "navbar main";
         .navigation {
             grid-area: navbar;
-            .links {
-                display: grid;
-                grid-template-rows: repeat(4, auto) 1fr auto;
-                gap: 0.5rem;
-                .link {
-                    border-radius: 0;
-                    border-top: 0;
-                    border-right: 0;
-                    border-bottom: 0;
-                    box-shadow: none;
-                    color: $earie-black;
-                    &:hover {
-                        color: $white
-                    }
-                    &:active {
-                        color: $white;
-                        box-shadow: $btn-active-box-shadow;
-                    }
-                }
-            }
         }
         .main {
             grid-area: main;
@@ -112,4 +89,43 @@ body {
             grid-area: map;
         }
     }
+}
+
+@include media-breakpoint-down(md) {
+    .home, .maps {
+        .main {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            min-height: 100%;
+        }
+    }
+}
+
+.navigation {
+    .links {
+        display: grid;
+        grid-template-rows: repeat(4, auto) 1fr auto;
+        gap: 0.5rem;
+        .link {
+            border-radius: 0;
+            border-top: 0;
+            border-right: 0;
+            border-bottom: 0;
+            box-shadow: none;
+            color: $earie-black;
+            &:hover {
+                color: $white
+            }
+            &:active {
+                color: $white;
+                box-shadow: $btn-active-box-shadow;
+            }
+        }
+    }
+}
+
+.home .card {
+    max-width: 600px;
+    min-width: 300px;
 }
