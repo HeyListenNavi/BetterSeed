@@ -16,12 +16,14 @@ const icons = [
     '📉',
 ]
 
+console.log(images)
+  
 document.addEventListener("DOMContentLoaded", () => {
     
     document.getElementById("generateSoilAnalysis").onclick = () => {
-        let randomIndex = Math.floor(Math.random() * images.length);
-        const randomImage = images[randomIndex];
-        document.getElementById("map").src = randomImage;
+          let randomIndex = Math.floor(Math.random() * images.length);
+          const randomImage = images[randomIndex];
+          document.getElementById("map").src = randomImage;
 
         randomIndex = Math.floor(Math.random() * icons.length);
         document.getElementById("precipitation").innerText = `${icons[randomIndex]} Precipitation`
