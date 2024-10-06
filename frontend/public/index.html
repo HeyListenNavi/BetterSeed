@@ -10,13 +10,65 @@
 </head>
 
 <body class="home">
-    <nav class="navigation">
-        Navigation
+    <nav class="navigation d-none d-md-flex flex-column p-3 shadow-lg z-2">
+        <img class="img-fluid w-75 align-self-center" src="/assets/img/logo.svg" alt="BetterSed logo">
+        <hr class="border border-primary border-1 opacity-100">
+        <div class="links flex-grow-1 flex-shrink-0 fs-5">
+            <button class="link btn btn-outline-info d-flex gap-2 p-2 py-3 border-start border-4 border-info opacity-100">
+                <i class="bi bi-person-circle"></i>
+                <span>Home</span>
+            </button>
+            <a href="maps.html" class="link btn btn-outline-info d-flex gap-2 p-2 py-3">
+                <i class="bi bi-map"></i>
+                <span>Map</span>
+            </a>
+            <button class="link btn btn-outline-info d-flex gap-2 p-2 py-3">
+                <i class="bi bi-images"></i>
+                <span>Screenshots</span>
+            </button>
+            <button class="link btn btn-outline-info d-flex gap-2 p-2 py-3">
+                <i class="bi bi-lightbulb"></i>
+                <span>Learning</span>
+            </button>
+
+            <div class="spacer"></div>
+           
+            <button class="link btn btn-outline-info d-flex gap-2 p-2">
+                <i class="bi bi-arrow-left"></i>
+                <span>Leave</span>
+            </button>
+        </div>
     </nav>
 
-    </div>
-    <div class="main">
-        Content
+    <div class="main bg-body-secondary p-4 d-flex justify-content-center align-items-center">
+        <div class="search card z-2 rounded-3 border-0 flex-grow-1 shadow-sm py-2">
+            <div class="card-body">
+                <div class="title d-flex align-items-center justify-content-between gap-2">
+                    <div class="text d-flex align-items-center gap-2">
+                        <i class="fs-4 bi bi-pin-map-fill"></i>
+                        <h1 class="fs-3 m-0">Search your area</h1>
+                    </div>
+                    <i class="bi bi-info-circle-fill "></i>
+                </div>
+                <div class="mb-3">
+                    <label for="searchFormInputAddress" class="form-label">Location</label>
+                    <input class="form-control" id="address-input" placeholder="Center location (address or coordinates)">
+                    <div id="address-list"></div>
+                </div>
+                <div class="mb-3">
+                    <input class="form-control" id="area_input" placeholder="Total map area (in square kilometers)"></input>
+                </div>
+                <div class="mb-3">
+                    <label for="searchFormInputCrop" class="form-label">Crop</label>
+                    <select class="form-select" aria-label="🌾 Crop">
+                        <option value="Corn">🌽 Corn</option>
+                        <option value="Grape">🍇 Grape</option>
+                        <option value="Weat">🌾 Weat</option>
+                    </select>
+                </div>
+                <a href="maps.html" class="btn btn-primary btn-lg w-100">🌱 Generate soil analysis</a>
+            </div>
+        </div>
     </div>
     
     <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
