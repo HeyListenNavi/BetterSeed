@@ -15,7 +15,7 @@ $jonquil-yellow: #EECB2E;
 $fire-red: #AE2323;
 
 $primary: $avocado-green;
-$secondary: $antiflash-white;
+$secondary: $seasalt-white;
 $success: $seasalt-white;
 $info: $asparagus-green;
 $warning: $jonquil-yellow;
@@ -49,4 +49,17 @@ html {
 
 body {
     min-height: 100%;
+}
+
+// Maps styles 🗺
+.home {
+    display: grid;
+    grid-template-columns: minmax(35%, 300px) 1fr;
+    grid-template-areas: "navbar main";
+    .navigation {
+        grid-area: "navbar";
+    }
+    .main {
+        grid-area: "main";
+    }
 }
