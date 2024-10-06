@@ -7,8 +7,6 @@ const images = [
     'assets/img/maps/6.jpeg',
     'assets/img/maps/7.jpeg',
     'assets/img/maps/8.jpeg',
-    'assets/img/maps/9.jpeg',
-    'assets/img/maps/10.jpeg',
 ];  
 
 const icons = [
